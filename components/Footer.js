@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-uniswap-bg mt-12">
-      <div className="text-uniswap-gray ml-4">
+    <footer className="bg-uniswap-bg mt-8 py-4">
+      <div className="text-uniswap-gray ml-6">
         <ul className="flex space-x-6 text-md items-center">
           <Link href="/community">
             <li>

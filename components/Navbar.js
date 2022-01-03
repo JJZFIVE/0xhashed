@@ -11,7 +11,7 @@ export default function Navbar() {
         <meta name="description" content="By the 0xHashed Creators" />
         <link rel="icon" href="/hashedLogo.png" />
       </Head>
-      <header className="bg-uniswap-bg text-uniswap-gray">
+      <nav className="bg-uniswap-bg text-uniswap-gray backdrop-filter backdrop-blur-sm bg-opacity-20">
         <div className="flex justify-between items-center">
           <div className="max-w-2xl pl-5 mt-2 mb-2">
             <ul className="flex space-x-6 text-xl items-center">
@@ -48,7 +48,7 @@ export default function Navbar() {
               </Link>
               <Link href="/clients">
                 <li>
-                  <button className="bg-purple-600 px-4 py-2 border-2 border-gray-600 rounded-md text-white">
+                  <button className="bg-purple-700 px-4 py-2 border-2 border-gray-400 rounded-xl text-white">
                     Clients
                   </button>
                 </li>
@@ -56,7 +56,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-      </header>
+      </nav>
     </div>
   );
 }
