@@ -1,12 +1,12 @@
 import Image from "next/image";
 import hashedLogo from "../public/hashedLogo.png";
-import tempHash from "../public/redoThisHash.png";
+import hashingPeople from "../public/hashingPeople.png";
 import JoinCommunity from "../components/JoinCommunity";
 
 export default function Community() {
   return (
     <div className="text-white">
-      <div className="pt-36 mx-28 pb-8 flex justify-between border-b border-gray-300 border-opacity-50">
+      <div className="pt-24 mx-28 pb-8 flex justify-between border-b border-gray-300 border-opacity-50">
         <div className="flex flex-col justify-between h-32">
           <h1 className="text-6xl">Community</h1>
           <p className="text-3xl">
@@ -19,8 +19,15 @@ export default function Community() {
       </div>
       <div className="my-24 text-center">
         <h1 className="text-4xl">Hashing a Beginner to an Expert</h1>
+        <br />
+        <p className="text-uniswap-gray">Let William write this</p>
         <div className="my-12">
-          <Image src={tempHash} height="200" width="1000"></Image>
+          <Image
+            src={hashingPeople}
+            height="250"
+            width="1000"
+            draggable="false"
+          ></Image>
         </div>
       </div>
       <JoinCommunity />

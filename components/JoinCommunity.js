@@ -12,16 +12,24 @@ export default function JoinCommunity() {
         </p>
       </div>
       <div className="flex justify-center">
-        <Link href="/">
-          <button className="px-8 py-1 border-2 border-purple-700 rounded-xl text-xl mr-3">
+        <a
+          href="https://twitter.com/0xhashed"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button className="px-12 py-1 border-2 border-purple-700 rounded-xl text-xl mr-3">
             Twitter
           </button>
-        </Link>
-        <Link href="/">
-          <button className="px-8 py-1 rounded-xl text-xl bg-purple-700 ml-3">
+        </a>
+        <a
+          href="https://discord.com/invite/VU5kNNk2PR"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button className="px-12 py-1 rounded-xl text-xl bg-purple-700 ml-3">
             Discord
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   );

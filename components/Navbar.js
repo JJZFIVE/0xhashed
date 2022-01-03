@@ -23,6 +23,7 @@ export default function Navbar() {
                       alt="0xHashed Logo"
                       width="75"
                       height="75"
+                      draggable="false"
                     ></Image>
                   </button>
                 </li>
@@ -48,7 +49,7 @@ export default function Navbar() {
               </Link>
               <Link href="/clients">
                 <li>
-                  <button className="bg-purple-700 px-4 py-2 border-2 border-gray-400 rounded-xl text-white">
+                  <button className="bg-purple-700 px-8 py-2 border-2 border-gray-400 rounded-xl text-white">
                     Clients
                   </button>
                 </li>
