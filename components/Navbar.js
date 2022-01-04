@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import hashedLogo from "../public/hashedLogo.png";
+import transparentHashedLogo from "../public/transparentHashedLogo.png";
 import Head from "next/head";
 
 export default function Navbar() {
@@ -19,10 +19,10 @@ export default function Navbar() {
                 <li>
                   <button>
                     <Image
-                      src={hashedLogo}
+                      src={transparentHashedLogo}
                       alt="0xHashed Logo"
-                      width="75"
-                      height="75"
+                      width="50"
+                      height="50"
                       draggable="false"
                     ></Image>
                   </button>

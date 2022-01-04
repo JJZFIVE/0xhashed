@@ -1,21 +1,17 @@
 .translate {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
-  left: 0px;
+  position: relative;
   animation: movehashed 3s ease-in-out infinite;
+  filter: drop-shadow(6px 6px 10px rgb(92, 0, 179));
 }
 
 @keyframes movehashed {
   0% {
-    transform: translateY(200px);
+    transform: translateY(0%);
   }
   50% {
-    transform: translateY(220px);
+    transform: translateY(10%);
   }
   100% {
-    transform: translateY(200px);
+    transform: translateY(0%);
   }
 }
