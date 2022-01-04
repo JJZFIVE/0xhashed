@@ -1,5 +1,4 @@
 import Image from "next/image";
-import hashedLogo from "../public/hashedLogo.png";
 import hashingPeople from "../public/hashingPeople.png";
 import JoinCommunity from "../components/JoinCommunity";
 

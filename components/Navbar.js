@@ -11,7 +11,7 @@ export default function Navbar() {
         <meta name="description" content="By the 0xHashed Creators" />
         <link rel="icon" href="/hashedLogo.png" />
       </Head>
-      <nav className="bg-uniswap-bg text-uniswap-gray backdrop-filter backdrop-blur-sm bg-opacity-20">
+      <nav className="bg-uniswap-bg text-uniswap-gray backdrop-filter backdrop-blur-sm bg-opacity-30">
         <div className="flex justify-between items-center">
           <div className="max-w-2xl pl-5 mt-2 mb-2">
             <ul className="flex space-x-6 text-xl items-center">
