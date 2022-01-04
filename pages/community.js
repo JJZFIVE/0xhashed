@@ -9,9 +9,9 @@ export default function Community() {
         <div className="flex flex-col justify-between h-32">
           <h1 className="text-6xl">Community</h1>
           <p className="text-3xl">
-            <span className="text-purple-700">Find</span> a team,{" "}
-            <span className="text-purple-700">post</span> your progress, and{" "}
-            <span className="text-purple-700">get noticed</span> by blockchain
+            <span className="text-purple-500">Find</span> a team,{" "}
+            <span className="text-purple-500">post</span> your progress, and{" "}
+            <span className="text-purple-500">get noticed</span> by blockchain
             organizations
           </p>
         </div>

@@ -17,7 +17,7 @@ export default function JoinCommunity() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <button className="px-12 py-1 border-2 border-purple-700 rounded-xl text-xl mr-3">
+          <button className="px-12 py-1 border border-purple-700 rounded-xl text-xl mr-3">
             Twitter
           </button>
         </a>

@@ -9,10 +9,10 @@ export default function Agency() {
           <div className="w-1/2 h-24">
             <p className="text-3xl">
               The 0xHashed Agency is a{" "}
-              <span className="text-purple-600">prestigious</span> group of
+              <span className="text-purple-500">prestigious</span> group of
               full-time blockchain{" "}
-              <span className="text-purple-600">experts</span> who build crypto
-              projects for <span className="text-purple-600">clients</span>
+              <span className="text-purple-500">experts</span> who build crypto
+              projects for <span className="text-purple-500">clients</span>
             </p>
           </div>
         </div>
