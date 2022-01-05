@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import transparentHashedLogo from "../public/transparentHashedLogo.png";
+import textLogo from "../public/textLogo.png";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [textLogoVisible, setTextLogoVisible] = useState(true);
+
   return (
     <div>
       <Head>
@@ -25,6 +29,18 @@ export default function Navbar() {
                       height="50"
                       draggable="false"
                     ></Image>
+
+                    {textLogoVisible ? (
+                      <Image
+                        src={textLogo}
+                        alt="0xHashed"
+                        width="200"
+                        height="50"
+                        draggable="false"
+                      ></Image>
+                    ) : (
+                      <div></div>
+                    )}
                   </button>
                 </li>
               </Link>
