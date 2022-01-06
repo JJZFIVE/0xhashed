@@ -4,8 +4,9 @@ import styles from "../styles/index.module.css";
 import transparentHashedLogo from "../public/transparentHashedLogo.png";
 import flowchart from "../public/flowchart.png";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import homepageSpotlight from "../public/homepageSpotlight.png";
+import anime from "animejs";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -13,10 +14,17 @@ export default function Home() {
   const executeScroll = () =>
     scrollRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
 
+  // Scrolling to info boxes
   useEffect(() => {
+    const scrolled = false;
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        console.log("Scrolled!");
+      if (window.pageYOffset > 1050 && !scrolled) {
+        scrolled = true;
+        anime({
+          targets: ".infoBoxesOpacity",
+          opacity: [0, 1],
+          delay: anime.stagger(200),
+        });
       }
     });
   }, []);
@@ -37,13 +45,13 @@ export default function Home() {
           <div className="w-2/3 mt-16 text-2xl">
             <button
               onClick={executeScroll}
-              className="px-6 py-3 border rounded-xl hover:opacity-70"
+              className="px-6 py-3 border rounded-xl hover:opacity-70 animate-fadeInSlow"
             >
               I'm a Developer
             </button>
 
             <Link href="/clients">
-              <button className="px-12 py-3 rounded-xl bg-purple-700 ml-24 hover:opacity-70">
+              <button className="px-12 py-3 rounded-xl bg-purple-700 ml-24 hover:opacity-70 animate-fadeInSlow">
                 I'm a Client
               </button>
             </Link>
@@ -95,7 +103,7 @@ export default function Home() {
       <div className="flex flex-row justify-between mt-8 mx-32 h-[400px] mb-80">
         <div className="flex flex-col justify-between h-5/6">
           <div className="">
-            <div className="z-[45] px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
+            <div className="z-[45] px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 The 0xHashed Community is a hub for anyone who wants to learn or
                 teach blockchain development
@@ -103,7 +111,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="z-30 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
+            <div className="z-30 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 The Community emphasizes learning through building projects in
                 small groups
@@ -111,7 +119,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="z-10 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
+            <div className="z-10 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 Innovative projects are featured in the Community Spotlight on
                 the website, in Discord, and on Twitter
@@ -121,7 +129,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-between mt-20 text-black">
           <div className="">
-            <div className="z-40 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute">
+            <div className="z-40 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 The 0xHashed Agency consists of industry experts who deliver
                 complex project solutions to clients
@@ -129,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="z-20 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute">
+            <div className="z-20 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 The Agency hires the best engineers and business minds
                 exclusively from the Community
@@ -137,7 +145,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <div className="z-0 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute">
+            <div className="z-0 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute opacity-0 infoBoxesOpacity">
               <p className="text-3xl">
                 Agency developers give back to the Community by offering
                 assistance and knowledge to learners

@@ -6,17 +6,29 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
 import { useRouter } from "next/router";
+import anime from "animejs";
 
 export default function Navbar() {
-  const [textLogoVisible, setTextLogoVisible] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 500) {
-        setTextLogoVisible(false);
+        anime({
+          targets: ".hashedText",
+          keyframes: [{ translateY: -40 }],
+          duration: 300,
+          easing: "easeInOutElastic(1, 0.5)",
+          loop: false,
+        });
       } else {
-        setTextLogoVisible(true);
+        anime({
+          targets: ".hashedText",
+          keyframes: [{ translateY: 0 }],
+          duration: 300,
+          easing: "easeInOutElastic(1, 0.5)",
+          loop: false,
+        });
       }
     });
   }, []);
@@ -42,17 +54,17 @@ export default function Navbar() {
                       height="50"
                       draggable="false"
                     ></Image>
-                    {textLogoVisible ? (
+                    {router.pathname == "/" ? (
                       <Image
                         src={textLogo}
                         alt="0xHashed"
                         width="200"
                         height="50"
                         draggable="false"
-                        className={styles.hashedText}
+                        className="hashedText"
                       ></Image>
                     ) : (
-                      <div></div>
+                      ``
                     )}
                   </button>
                 </li>
