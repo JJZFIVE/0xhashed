@@ -50,22 +50,22 @@ export default function Navbar() {
             <ul className="flex space-x-6 text-lg items-center ">
               <Link href="/community">
                 <li>
-                  <button>Community</button>
+                  <button className="hover:opacity-70">Community</button>
                 </li>
               </Link>
               <Link href="/agency">
                 <li>
-                  <button>Agency</button>
+                  <button className="hover:opacity-70">Agency</button>
                 </li>
               </Link>
               <Link href="/spotlight">
                 <li>
-                  <button>Spotlight</button>
+                  <button className="hover:opacity-70">Spotlight</button>
                 </li>
               </Link>
               <Link href="/clients">
                 <li>
-                  <button className="bg-purple-700 px-8 py-2 border-2 border-gray-400 rounded-xl text-white">
+                  <button className="bg-purple-700 px-8 py-2 border-2 border-gray-400 rounded-xl text-white hover:opacity-70">
                     Clients
                   </button>
                 </li>

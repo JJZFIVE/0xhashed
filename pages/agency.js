@@ -20,7 +20,7 @@ export default function Agency() {
       <div className="flex justify-between my-20">
         <div className="ml-28 mr-20">
           <Link href="/community">
-            <button className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mb-6 w-full">
+            <button className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mb-6 w-full hover:opacity-70">
               <h3 className="text-3xl">Community Sourced</h3>
               <p className="text-2xl text-uniswap-gray">
                 We only hire directly out of the Community
@@ -32,7 +32,7 @@ export default function Agency() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 my-6">
+            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 my-6 hover:opacity-70">
               <h3 className="text-3xl">Open Jobs</h3>
 
               <p className="text-2xl text-uniswap-gray">
@@ -45,7 +45,7 @@ export default function Agency() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mt-6">
+            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mt-6 hover:opacity-70">
               <h3 className="text-3xl">How to Apply</h3>
               <p className="text-2xl text-uniswap-gray">
                 Hiring information is found under #hiring in our Discord

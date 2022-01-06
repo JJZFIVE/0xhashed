@@ -30,18 +30,20 @@ export default function Home() {
             <h1 className="text-6xl mt-2">Build with experts</h1>
           </div>
           <h3 className="text-3xl w-2/3 mt-12">
-            Creating the next generation of industry leaders in blockchain{" "}
+            Creating the{" "}
+            <span className="text-purple-500">next generation</span> of industry
+            leaders in <span className="text-purple-500">blockchain</span>
           </h3>
           <div className="w-2/3 mt-16 text-2xl">
             <button
               onClick={executeScroll}
-              className="px-6 py-3 border rounded-xl"
+              className="px-6 py-3 border rounded-xl hover:opacity-70"
             >
               I'm a Developer
             </button>
 
             <Link href="/clients">
-              <button className="px-12 py-3 rounded-xl bg-purple-700 ml-24">
+              <button className="px-12 py-3 rounded-xl bg-purple-700 ml-24 hover:opacity-70">
                 I'm a Client
               </button>
             </Link>
@@ -78,16 +80,12 @@ export default function Home() {
       <div className="text-3xl flex justify-between flex-row mt-40">
         <Link href="/community">
           <a>
-            <h3 className="ml-32 hover:underline text-uniswap-gray">
-              Community &#8594;
-            </h3>
+            <h3 className="ml-32 hover:underline">Community &#8594;</h3>
           </a>
         </Link>
         <Link href="/agency">
           <a>
-            <h3 className="mr-24 hover:underline text-uniswap-gray">
-              Agency &#8594;
-            </h3>
+            <h3 className="mr-24 hover:underline">Agency &#8594;</h3>
           </a>
         </Link>
 
@@ -99,8 +97,8 @@ export default function Home() {
           <div className="">
             <div className="z-50 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
               <p className="text-3xl">
-                The 0xHashed Community is a hub for anyone who wants to learn
-                blockchain development
+                The 0xHashed Community is a hub for anyone who wants to learn or
+                teach blockchain development
               </p>
             </div>
           </div>
@@ -125,8 +123,8 @@ export default function Home() {
           <div className="">
             <div className="z-40 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute">
               <p className="text-3xl">
-                The 0xHashed Agency consists of full time experts who develop
-                complex projects for clients
+                The 0xHashed Agency consists of industry experts who deliver
+                complex project solutions to clients
               </p>
             </div>
           </div>
@@ -141,7 +139,7 @@ export default function Home() {
           <div className="">
             <div className="z-0 px-12 py-4 w-[43%] bg-uniswap-light-gray-box rounded-2xl border-2 border-gray-200 text-left flex flex-col justify-center absolute">
               <p className="text-3xl">
-                Agency engineers give back to the Community by offering
+                Agency developers give back to the Community by offering
                 assistance and knowledge to learners
               </p>
             </div>

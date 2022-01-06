@@ -15,22 +15,22 @@ export default function Footer() {
           <ul className="flex space-x-6 text-md items-center">
             <Link href="/community">
               <li>
-                <button>Community</button>
+                <button className="hover:opacity-70">Community</button>
               </li>
             </Link>
             <Link href="/agency">
               <li>
-                <button>Agency</button>
+                <button className="hover:opacity-70">Agency</button>
               </li>
             </Link>
             <Link href="/spotlight">
               <li>
-                <button>Spotlight</button>
+                <button className="hover:opacity-70">Spotlight</button>
               </li>
             </Link>
             <Link href="/clients">
               <li>
-                <button>Clients</button>
+                <button className="hover:opacity-70">Clients</button>
               </li>
             </Link>
           </ul>
