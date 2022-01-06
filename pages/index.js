@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div className="text-white">
-      <div className="flex justify-between mt-20">
-        <div className="flex flex-col h-60 justify-between ml-28 mt-4">
+      <div className="flex justify-between pt-40">
+        <div className="flex flex-col h-60 justify-between ml-28 pt-4">
           <div>
             <h1 className="text-6xl">Learn with a community.</h1>
             <h1 className="text-6xl mt-2">Build with experts</h1>
@@ -95,7 +95,7 @@ export default function Home() {
       <div className="flex flex-row justify-between mt-8 mx-32 h-[400px] mb-80">
         <div className="flex flex-col justify-between h-5/6">
           <div className="">
-            <div className="z-50 px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
+            <div className="z-[45] px-12 py-4 w-[43%] bg-uniswap-dark-gray-box rounded-2xl border-2 border-gray-400 text-left flex flex-col justify-center absolute">
               <p className="text-3xl">
                 The 0xHashed Community is a hub for anyone who wants to learn or
                 teach blockchain development

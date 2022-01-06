@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Clients() {
   const scrollRef = useRef(null);
@@ -36,7 +36,7 @@ export default function Clients() {
         height="840"
         width="100%"
       >
-        Loading...
+        Loading
       </iframe>
     </div>
   );
