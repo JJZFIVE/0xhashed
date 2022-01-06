@@ -1,0 +1,16 @@
+.translate {
+  animation: move 3s ease-in-out infinite;
+  filter: drop-shadow(6px 6px 10px rgb(92, 0, 179));
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

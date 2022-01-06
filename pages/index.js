@@ -14,6 +14,31 @@ export default function Home() {
   const executeScroll = () =>
     scrollRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
 
+  useEffect(() => {
+    anime({
+      targets: ".homeText",
+      opacity: [0, 1],
+      delay: anime.stagger(500),
+      duration: 5000,
+      loop: false,
+    });
+  }, []);
+
+  // Scrolling to Join the Community
+  useEffect(() => {
+    const scrolled = false;
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 2200 && !scrolled) {
+        scrolled = true;
+        anime({
+          targets: ".joinCommunity",
+          opacity: [0, 1],
+          duration: 10000,
+        });
+      }
+    });
+  }, []);
+
   // Scrolling to info boxes
   useEffect(() => {
     const scrolled = false;
@@ -33,11 +58,11 @@ export default function Home() {
     <div className="text-white">
       <div className="flex justify-between pt-40">
         <div className="flex flex-col h-60 justify-between ml-28 pt-4">
-          <div>
+          <div className="homeText">
             <h1 className="text-6xl">Learn with a community.</h1>
             <h1 className="text-6xl mt-2">Build with experts</h1>
           </div>
-          <h3 className="text-3xl w-2/3 mt-12">
+          <h3 className="text-3xl w-2/3 mt-12 homeText">
             Creating the{" "}
             <span className="text-purple-500">next generation</span> of industry
             leaders in <span className="text-purple-500">blockchain</span>
@@ -57,7 +82,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="mr-52">
+        <div className="mr-52 animate-fadeInFast">
           <div className={styles.translate}>
             <Image
               src={transparentHashedLogo}
@@ -88,12 +113,16 @@ export default function Home() {
       <div className="text-3xl flex justify-between flex-row mt-40">
         <Link href="/community">
           <a>
-            <h3 className="ml-32 hover:underline">Community &#8594;</h3>
+            <h3 className="ml-32 hover:underline opacity-0 infoBoxesOpacity">
+              Community &#8594;
+            </h3>
           </a>
         </Link>
         <Link href="/agency">
           <a>
-            <h3 className="mr-24 hover:underline">Agency &#8594;</h3>
+            <h3 className="mr-24 hover:underline opacity-0 infoBoxesOpacity">
+              Agency &#8594;
+            </h3>
           </a>
         </Link>
 
@@ -172,8 +201,9 @@ export default function Home() {
           draggable="false"
         ></Image>
       </div>
-
-      <JoinCommunity />
+      <div className="joinCommunity opacity-0">
+        <JoinCommunity />
+      </div>
     </div>
   );
 }
