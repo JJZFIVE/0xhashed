@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import transparentHashedLogo from "../public/transparentHashedLogo.png";
-import textLogo from "../public/textLogo.png";
+import textLogo from "../public/textlogo.png";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
