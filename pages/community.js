@@ -26,10 +26,14 @@ export default function Community() {
           </p>
         </div>
       </div>
-      <div className="my-24 text-center communityFade">
+      <div className="my-24 text-center communityFade flex flex-col items-center">
         <h1 className="text-4xl">Hashing a Beginner to an Expert</h1>
-        <br />
-        <p className="text-uniswap-gray">Let William write this</p>
+        <p className="text-uniswap-gray w-1/2 mt-10">
+          "Hashing" is a relevant function in computer science that takes an
+          arbitrary input type and outputs a number based off of the profile of
+          the input. At 0xHashed, our goal is to "Hash" the Community to output
+          a wealth of blockchain experts, leaders, and next-generation thinkers.
+        </p>
         <div className="my-12">
           <Image
             src={hashingPeople}

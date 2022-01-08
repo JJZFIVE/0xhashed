@@ -1,14 +1,24 @@
 import Link from "next/link";
 import { useEffect } from "react";
+import anime from "animejs";
 
 export default function Agency() {
+  useEffect(() => {
+    anime({
+      targets: ".agencyFade",
+      opacity: [0, 1],
+      delay: anime.stagger(200),
+      duration: 3000,
+    });
+  }, []);
+
   return (
     <div className="text-white">
       <div className="pt-24 mx-28 pb-8 flex justify-between border-b border-gray-300 border-opacity-50">
         <div className="flex flex-col justify-between h-52">
-          <h1 className="text-6xl">Agency</h1>
+          <h1 className="text-6xl agencyFade">Agency</h1>
           <div className="w-1/2 h-24">
-            <p className="text-3xl">
+            <p className="text-3xl agencyFade">
               The 0xHashed Agency is a{" "}
               <span className="text-purple-500">prestigious</span> group of
               full-time blockchain{" "}
@@ -21,7 +31,7 @@ export default function Agency() {
       <div className="flex justify-between my-20">
         <div className="ml-28 mr-20">
           <Link href="/community">
-            <button className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mb-6 w-full hover:opacity-70">
+            <button className=" agencyFade py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mb-6 w-full hover:opacity-70">
               <h3 className="text-3xl">Community Sourced</h3>
               <p className="text-2xl text-uniswap-gray">
                 We only hire directly out of the Community
@@ -33,7 +43,7 @@ export default function Agency() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 my-6 hover:opacity-70">
+            <div className="agencyFade py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 my-6 hover:opacity-70">
               <h3 className="text-3xl">Open Jobs</h3>
 
               <p className="text-2xl text-uniswap-gray">
@@ -46,7 +56,7 @@ export default function Agency() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <div className="py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mt-6 hover:opacity-70">
+            <div className="agencyFade py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mt-6 hover:opacity-70">
               <h3 className="text-3xl">How to Apply</h3>
               <p className="text-2xl text-uniswap-gray">
                 Hiring information is found under #hiring in our Discord
@@ -54,7 +64,7 @@ export default function Agency() {
             </div>
           </a>
         </div>
-        <div className="mr-28 px-8 py-8 w-1/3 flex flex-col justify-start rounded-xl border border-gray-500 bg-purple-500 bg-opacity-50">
+        <div className="agencyFade mr-28 px-8 py-8 w-1/3 flex flex-col justify-start rounded-xl border border-gray-500 bg-purple-500 bg-opacity-50">
           <h3 className="text-3xl">Our Hiring Approach</h3>
           <div className="w-full text-lg mt-6">
             <p>
