@@ -39,9 +39,9 @@ export default function Clients() {
       <iframe
         ref={scrollRef}
         src="https://joe0xhashed.wispform.com/7bd6d99b"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
         height="840"
         width="100%"
       >

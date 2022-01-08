@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="flex justify-between">
         <div className="text-uniswap-gray ml-6 flex items-center">
           <ul className="flex space-x-6 text-md items-center">
-            <Link href="/community">
+            <Link href="/community" passHref>
               <li
                 className={
                   router.pathname == "/community" ? "text-gray-300" : ""
@@ -25,14 +25,14 @@ export default function Footer() {
                 <button className="hover:opacity-70">Community</button>
               </li>
             </Link>
-            <Link href="/agency">
+            <Link href="/agency" passHref>
               <li
                 className={router.pathname == "/agency" ? "text-gray-300" : ""}
               >
                 <button className="hover:opacity-70">Agency</button>
               </li>
             </Link>
-            <Link href="/spotlight">
+            <Link href="/spotlight" passHref>
               <li
                 className={
                   router.pathname == "/spotlight" ? "text-gray-300" : ""
@@ -41,7 +41,7 @@ export default function Footer() {
                 <button className="hover:opacity-70">Spotlight</button>
               </li>
             </Link>
-            <Link href="/clients">
+            <Link href="/clients" passHref>
               <li
                 className={router.pathname == "/clients" ? "text-gray-300" : ""}
               >
@@ -58,7 +58,12 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Image src={discordUnselected} height="35" width="35"></Image>
+                <Image
+                  src={discordUnselected}
+                  alt="DiscordButton"
+                  height="35"
+                  width="35"
+                ></Image>
               </a>
             </li>
             <li className="hover:opacity-70">
@@ -67,7 +72,12 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Image src={githubUnselected} height="35" width="35"></Image>
+                <Image
+                  src={githubUnselected}
+                  alt="GithubButton"
+                  height="35"
+                  width="35"
+                ></Image>
               </a>
             </li>
             <li className="hover:opacity-70">
@@ -76,7 +86,12 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Image src={twitterUnselected} height="45" width="45"></Image>
+                <Image
+                  src={twitterUnselected}
+                  alt="TwitterButton"
+                  height="45"
+                  width="45"
+                ></Image>
               </a>
             </li>
           </ul>

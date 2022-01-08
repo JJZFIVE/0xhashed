@@ -72,12 +72,12 @@ export default function Home() {
               onClick={executeScroll}
               className="px-6 py-3 border rounded-xl hover:opacity-70 animate-fadeInSlow"
             >
-              I'm a Developer
+              I&apos;m a Developer
             </button>
 
-            <Link href="/clients">
+            <Link href="/clients" passHref>
               <button className="px-12 py-3 rounded-xl bg-purple-700 ml-24 hover:opacity-70 animate-fadeInSlow">
-                I'm a Client
+                I&apos;m a Client
               </button>
             </Link>
           </div>
@@ -86,6 +86,7 @@ export default function Home() {
           <div className={styles.translate}>
             <Image
               src={transparentHashedLogo}
+              alt="Transparent Hashed Logo"
               height="250"
               width="250"
               draggable="false"
@@ -105,6 +106,7 @@ export default function Home() {
       <div ref={scrollRef} className="flex flex-col items-center mt-4">
         <Image
           src={flowchart}
+          alt="Flow Chart"
           height="450"
           width="1200"
           draggable="false"
@@ -196,6 +198,7 @@ export default function Home() {
         </div>
         <Image
           src={homepageSpotlight}
+          alt="Homepage Spotlight"
           height="550"
           width="1000"
           draggable="false"

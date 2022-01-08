@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="max-w-2xl pl-5 mt-2 mb-2">
             <ul className="flex space-x-6 text-xl items-center">
-              <Link href="/">
+              <Link href="/" passHref>
                 <li>
                   <button>
                     <Image
@@ -73,7 +73,7 @@ export default function Navbar() {
           </div>
           <div className="max-w-2xl pl-5 mr-8">
             <ul className="flex space-x-6 text-lg items-center ">
-              <Link href="/community">
+              <Link href="/community" passHref>
                 <li
                   className={
                     router.pathname == "/community" ? "text-gray-300" : ""
@@ -82,7 +82,7 @@ export default function Navbar() {
                   <button className="hover:opacity-70">Community</button>
                 </li>
               </Link>
-              <Link href="/agency">
+              <Link href="/agency" passHref>
                 <li
                   className={
                     router.pathname == "/agency" ? "text-gray-300" : ""
@@ -91,7 +91,7 @@ export default function Navbar() {
                   <button className="hover:opacity-70">Agency</button>
                 </li>
               </Link>
-              <Link href="/spotlight">
+              <Link href="/spotlight" passHref>
                 <li
                   className={
                     router.pathname == "/spotlight" ? "text-gray-300" : ""
@@ -100,7 +100,7 @@ export default function Navbar() {
                   <button className="hover:opacity-70">Spotlight</button>
                 </li>
               </Link>
-              <Link href="/clients">
+              <Link href="/clients" passHref>
                 <li
                   className={
                     router.pathname == "/clients"

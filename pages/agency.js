@@ -30,7 +30,7 @@ export default function Agency() {
       </div>
       <div className="flex justify-between my-20">
         <div className="ml-28 mr-20">
-          <Link href="/community">
+          <Link href="/community" passHref>
             <button className=" agencyFade py-6 px-6 bg-uniswap-dark-gray-box flex flex-col justify-between rounded-xl border border-gray-500 mb-6 w-full hover:opacity-70">
               <h3 className="text-3xl">Community Sourced</h3>
               <p className="text-2xl text-uniswap-gray">
